@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Madhumitha's Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #f8f9fa, #e3f2fd);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2196f3;
+            color: white;
+            padding: 20px;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin: 0;
+        }
+        section {
+            padding: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: white;
+            margin: 8px auto;
+            padding: 10px;
+            width: 200px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #f1f1f1;
+            color: gray;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        a {
+            color: #2196f3;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Webpage</h1>
+   
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>My name is Madhumitha, and I love coding, singing, and learning new technologies!</p>
+<img src=https://img.pikbest.com/wp/202413/outline-sketch-beautiful-girl-in-an-drawing-coloring-page-vector_10480453.jpg!sw800 width="200" height="200">
+        <h2>My Hobbies</h2>
+        <ul>
+            <li>🎵 Singing</li>
+            <li>💻 Coding</li>
+            <li>📚 Reading</li>
+        </ul>
+
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:madhuseethaka08@gmail.com">madhuseethaka08@gmail.com</a></p>
+        <button onclick="showMessage()">Click Me!</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Madhumitha. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for Greeting Message
+        const today = new Date();
+        const hour = today.getHours();
+        let greeting;
+        if (hour < 12) {
+            greeting = "Good Morning!";
+        } else if (hour < 18) {
+            greeting = "Good Afternoon!";
+        } else {
+            greeting = "Good Evening!";
+        }
+        document.getElementById("greeting").innerText = greeting;
+
+        // Button Click Message
+        function showMessage() {
+            alert("Thanks for visiting my webpage! 😊");
+        }
+    </script>
+
+</body>
+</html>
